@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cornell Notes Creator</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" href="resources/primary.css">
+	<script src="resources/utilities.js"></script>
+</head>
+<body>
+	<div id="modeswitch">
+		<button onclick="dark()" id="dark">Switch to dark mode</button>
+	</div>
+	<form>
+	<main>
+		<section class="header">
+			<input maxlength="90" placeholder="Enter a title..." name="title">
+			<p id="">&nbsp</p>
+		</section>
+		<section class="main">
+			<div class="mainidea">
+				<textarea placeholder="Main ideas..." id="mainIdea" oninput="resizeMainIdea()" name="mainIdea"></textarea>
+			</div>
+			<div class="notes">
+				<textarea placeholder="Notes..." id="notes" oninput="resizeNotes()" name="notes"></textarea>
+			</div>
+		</section>
+		<section class="summary">
+			<textarea placeholder="Summary..." id="summary" oninput="resizeSummary()" name="summary"></textarea>
+		</section>
+	</main>
+</form>
+</body>
+</html>
