@@ -17,14 +17,16 @@
 			<input maxlength="90" placeholder="Enter a title..." name="title">
 			<p id="">&nbsp</p>
 		</section>
-		<section class="main">
-			<div class="mainidea">
-				<textarea placeholder="Main ideas..." id="mainIdea" oninput="resizeMainIdea()" name="mainIdea"></textarea>
-			</div>
-			<div class="notes">
-				<textarea placeholder="Notes..." id="notes" oninput="resizeNotes()" name="notes"></textarea>
-			</div>
-		</section>
+		<div class="mainwrapper">
+			<section class="main">
+				<div class="mainidea">
+					<textarea placeholder="Main idea..." id="mainIdea1" oninput="resizeMainIdea(1)" name="mainIdea"></textarea>
+				</div>
+				<div class="notes">
+					<textarea placeholder="Notes..." id="notes1" oninput="resizeNotes(1)" name="notes"></textarea>
+				</div>
+			</section>
+		</div>
 		<section class="summary">
 			<textarea placeholder="Summary..." id="summary" oninput="resizeSummary()" name="summary"></textarea>
 		</section>

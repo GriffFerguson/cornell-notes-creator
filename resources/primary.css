@@ -21,10 +21,17 @@ main {
 }
 
 .notes, .mainidea{border:1px solid var(--border-color);}
-.main, .header, .summary{border:2px solid var(--border-color);}
+.header, .summary{border:2px solid var(--border-color);}
 .header, .summary, .mainidea, .notes{padding:0.6vw;}
+.main:first-of-type{border-top:1px solid var(--border-color);}
+.main{border-bottom:3px dotted var(--border-color);border-left:1px solid var(--border-color);border-right:1px solid var(--border-color);}
+.main:last-of-type{border-top:none;border-bottom:1px solid var(--border-color);}
+.mainidea, .notes{border-bottom:none;border-top:none;}
 
-
+.mainwrapper {
+	display: grid;
+	grid-template-rows: minmax(20vh,auto);
+}
 .main {
 	display: grid;
 	grid-template-columns: 25% 75%;

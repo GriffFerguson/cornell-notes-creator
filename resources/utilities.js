@@ -1,20 +1,20 @@
 //RESIZE
 var notes;
 var mainIdea;
-var summary
+var summary;
 
 window.onload = function() {
-    notes = document.getElementById("notes");
-    mainIdea = document.getElementById("mainIdea");
     summary = document.getElementById("summary");
 }
 
-function resizeNotes() {
+function resizeNotes(x) {
+	notes = document.getElementById("notes" + x);
     notes.style.height = "1px";
     notes.style.height = notes.scrollHeight + "px";
 }
 
-function resizeMainIdea() {
+function resizeMainIdea(x) {
+	mainIdea = document.getElementById("mainIdea" + x);
     mainIdea.style.height = "1px";
     mainIdea.style.height = mainIdea.scrollHeight + "px";
 }
