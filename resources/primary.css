@@ -4,6 +4,8 @@ body{margin:0;}
 		--border-color: #000000;
 		--background-color: #ffffff;
 		--placeholder-text: #999999;
+		--font-size-1: 1.1;
+		--font-size-2: 1.5;
 }
 
 body{
@@ -18,7 +20,35 @@ main {
 		margin-left:12%;
 		margin-right:12%;
 		margin-bottom: 2%;
+		padding-top: 9.5vh;
 }
+
+p, span {
+	color: var(--text-color-1);
+	font-family: WorkSans;
+	font-size: 0.9em;
+}
+
+th{font-family:WorkSansBlack;font-size:1em;letter-spacing: 0.75px;color:var(--text-color-1)}
+span{font-size: 1.1em;}
+
+#controlbar{
+	padding:5px;
+	position:fixed;
+	z-index:99;
+	background-color: var(--background-color);
+	width:100%;
+	display:grid;
+	grid-template-columns: 7.5% 9%;
+	transition: background-color 700ms;
+}
+
+table, th, td {
+	border: none;
+	padding: none;
+}
+
+thead, tbody{font-size: 0.9em;margin:none;padding:2px;}
 
 .notes, .mainidea{border:1px solid var(--border-color);}
 .header, .summary{border:2px solid var(--border-color);}
@@ -28,7 +58,7 @@ main {
 .main:last-of-type{border-top:none;border-bottom:1px solid var(--border-color);}
 .mainidea, .notes{border-bottom:none;border-top:none;}
 
-.mainwrapper {
+#mainwrapper {
 	display: grid;
 	grid-template-rows: minmax(20vh,auto);
 }
@@ -41,7 +71,7 @@ textarea {
 	color: var(--text-color-1);
 	margin:3px;
 	font-family: WorkSans;
-	font-size:1.1em;
+	font-size: calc(var(--font-size-1) * 1em);
 	width:100%;
 	background-color:var(--background-color);
 	border: none;
@@ -58,11 +88,11 @@ textarea:focus {
 
 .header input {
 	font-family: WorkSansBlack;
-	font-size: 1.5em;
+	font-size: calc(var(--font-size-2) * 1em);
 	border:none;
 	width: 80%;
 	background-color:var(--background-color);
-	color:var(--text-color-1);
+	color:var(--text-color-2);
 	transition: background-color 700ms;
 }
 

@@ -5,11 +5,28 @@
 	<title>Cornell Notes Creator</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<link rel="stylesheet" href="resources/primary.css">
-	<script src="resources/utilities.js"></script>
+	<script src="resources/controls.js"></script>
+	<script src="resources/resize.js"></script>
 </head>
 <body>
-	<div id="modeswitch">
-		<button onclick="dark()" id="dark">Switch to dark mode</button>
+	<div id="controlbar">
+		<div id="modeswitch">
+			<button onclick="dark()" id="dark">Switch to dark mode</button>
+		</div>
+		<div>
+			<table style="display:inline-block;">
+				<thead>
+					<th>Font Size</th>
+				</thead>
+				<tbody>
+					<td>
+						<button style="display:inline-block;" onclick="fontIncrease()">+</button>
+						<p style="display:inline-block;width:5vw;text-align:center;">Current: <span id="fontSize">1.1</span></p>
+						<button style="display:inline-block;"  onclick="fontDecrease()">-</button>
+					</td>
+				</tbody>
+			</table>
+		</div>
 	</div>
 	<form>
 	<main>
@@ -17,7 +34,7 @@
 			<input maxlength="90" placeholder="Enter a title..." name="title">
 			<p id="">&nbsp</p>
 		</section>
-		<div class="mainwrapper">
+		<div id="mainwrapper">
 			<section class="main">
 				<div class="mainidea">
 					<textarea placeholder="Main idea..." id="mainIdea1" oninput="resizeMainIdea(1)" name="mainIdea"></textarea>
