@@ -1,26 +1,25 @@
-body{margin:0;}
 :root {
-		--text-color-1: #000000;
-		--border-color: #000000;
-		--background-color: #ffffff;
-		--placeholder-text: #999999;
-		--font-size-1: 1.1;
-		--font-size-2: 1.5;
+	--text-color-1: #000000;
+	--border-color: #000000;
+	--background-color: #ffffff;
+	--placeholder-text: #999999;
+	--font-size-1: 1.1;
+	--font-size-2: 1.5;
 }
 
 body{
-		margin: 0;
-		background-color: var(--background-color);
-		transition: background-color 700ms;
+	margin: 0;
+	background-color: var(--background-color);
+	transition: background-color 700ms;
 }
 
 main {
-		display: grid;
-		grid-template-rows: 8vh minmax(20vh, auto) minmax(12vh, auto);
-		margin-left:12%;
-		margin-right:12%;
-		margin-bottom: 2%;
-		padding-top: 9.5vh;
+	display: grid;
+	grid-template-rows: minmax(8vh, 10vh) minmax(20vh, auto) minmax(12vh, auto);
+	margin-left:12%;
+	margin-right:12%;
+	margin-bottom: 2%;
+	padding-top: 9.5vh;
 }
 
 p, span {
@@ -39,7 +38,7 @@ span{font-size: 1.1em;}
 	background-color: var(--background-color);
 	width:100%;
 	display:grid;
-	grid-template-columns: 7.5% 9%;
+	grid-template-columns: 15% 15%;
 	transition: background-color 700ms;
 }
 
@@ -92,7 +91,7 @@ textarea:focus {
 	border:none;
 	width: 80%;
 	background-color:var(--background-color);
-	color:var(--text-color-2);
+	color:var(--text-color-1);
 	transition: background-color 700ms;
 }
 

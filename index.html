@@ -1,53 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Cornell Notes Creator</title>
-	<meta name="viewport" content="width=device-width,initial-scale=1.0">
-	<link rel="stylesheet" href="resources/primary.css">
-	<script src="resources/controls.js"></script>
-	<script src="resources/resize.js"></script>
+  <meta charset="UTF-8">
+  <title>Cornell Notes Creator</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" href="resources/primary.css">
+  <script src="resources/controls.js"></script>
+  <script src="resources/resize.js"></script>
 </head>
 <body>
-	<div id="controlbar">
-		<div id="modeswitch">
-			<button onclick="dark()" id="dark">Switch to dark mode</button>
-		</div>
-		<div>
-			<table style="display:inline-block;">
-				<thead>
-					<th>Font Size</th>
-				</thead>
-				<tbody>
-					<td>
-						<button style="display:inline-block;" onclick="fontIncrease()">+</button>
-						<p style="display:inline-block;width:5vw;text-align:center;">Current: <span id="fontSize">1.1</span></p>
-						<button style="display:inline-block;"  onclick="fontDecrease()">-</button>
-					</td>
-				</tbody>
-			</table>
-		</div>
-	</div>
-	<form>
-	<main>
-		<section class="header">
-			<input maxlength="90" placeholder="Enter a title..." name="title">
-			<p id="">&nbsp</p>
-		</section>
-		<div id="mainwrapper">
-			<section class="main">
-				<div class="mainidea">
-					<textarea placeholder="Main idea..." id="mainIdea1" oninput="resizeMainIdea(1)" name="mainIdea"></textarea>
-				</div>
-				<div class="notes">
-					<textarea placeholder="Notes..." id="notes1" oninput="resizeNotes(1)" name="notes"></textarea>
-				</div>
-			</section>
-		</div>
-		<section class="summary">
-			<textarea placeholder="Summary..." id="summary" oninput="resizeSummary()" name="summary"></textarea>
-		</section>
-	</main>
+  <div id="controlbar">
+    <div id="modeswitch">
+      <button onclick="dark()" id="dark">Switch to dark mode</button>
+    </div>
+    <div>
+      <table style="display:inline-block;">
+        <thead>
+          <th>Font Size</th>
+        </thead>
+        <tbody>
+          <td>
+            <button style="display:inline-block;" onclick="fontIncrease()">+</button>
+            <p style="display:inline-block;width:7vw;text-align:center;">Current: <span id="fontSize">1.1</span></p>
+            <button style="display:inline-block;"  onclick="fontDecrease()">-</button>
+          </td>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <form>
+  <main>
+    <section class="header">
+      <input maxlength="90" placeholder="Enter a title..." name="title">
+      <p id="">&nbsp</p>
+    </section>
+    <div id="mainwrapper">
+      <section class="main">
+        <div class="mainidea">
+          <textarea placeholder="Main idea..." id="mainIdea1" oninput="resizeMainIdea(1)" name="mainIdea"></textarea>
+        </div>
+        <div class="notes">
+          <textarea placeholder="Notes..." id="notes1" oninput="resizeNotes(1)" name="notes"></textarea>
+        </div>
+      </section>
+    </div>
+    <section class="summary">
+      <textarea placeholder="Summary..." id="summary" oninput="resizeSummary()" name="summary"></textarea>
+    </section>
+  </main>
 </form>
 </body>
 </html>
