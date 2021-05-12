@@ -31,8 +31,26 @@ p, span {
 th{font-family:WorkSansBlack;font-size:1em;letter-spacing: 0.75px;color:var(--text-color-1)}
 span{font-size: 1.1em;}
 
+#alert {
+	--alert-text-col: #ffffff;
+	--alert-back-col: #000000;
+	background-color: var(--alert-back-col);
+	position:fixed;
+	top:0%;
+	left:50%;
+	width:30vw;
+	height:10vh;
+	transform:translate(-50%, -110%);
+	z-index:999;
+	transition: transform 450ms;
+	padding:0.5em;
+	border:2px solid white;
+}
+#alert p{color:var(--alert-text-col) !important;}
+.open-alert{transform: translate(-50%, 0%)!important;}
+
 #controlbar{
-	padding:5px;
+	padding:0.5em;
 	position:fixed;
 	z-index:99;
 	background-color: var(--background-color);
