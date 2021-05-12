@@ -15,21 +15,23 @@
       <button onclick="dark()" id="dark">Switch to dark mode</button>
     </div>
     <div>
-      <table style="display:inline-block;">
+      <table>
         <thead>
           <th>Font Size</th>
         </thead>
         <tbody>
           <td>
-            <button style="display:inline-block;" onclick="fontIncrease()">+</button>
-            <p style="display:inline-block;width:7vw;text-align:center;">Current: <span id="fontSize">1.1</span></p>
-            <button style="display:inline-block;"  onclick="fontDecrease()">-</button>
+            <div id="font-cons">
+              <button style="display:inline-block;" onclick="fontIncrease()">+</button>
+              <p style="display:inline-block;width:7vw;text-align:center;">Current: <span id="fontSize">1.1</span></p>
+              <button style="display:inline-block;"  onclick="fontDecrease()">-</button>
+            </div>
           </td>
         </tbody>
       </table>
     </div>
     <div>
-      <table style="width:100%;">
+      <table>
         <thead>
           <th colspan="2">Section Controls</th>
         </thead>
