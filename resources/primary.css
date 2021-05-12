@@ -38,16 +38,17 @@ span{font-size: 1.1em;}
 	background-color: var(--background-color);
 	width:100%;
 	display:grid;
-	grid-template-columns: 15% 15%;
+	grid-template-columns: 15% 15% 20%;
 	transition: background-color 700ms;
 }
 
 table, th, td {
 	border: none;
-	padding: none;
+	padding: 0;
+	margin:0;
 }
 
-thead, tbody{font-size: 0.9em;margin:none;padding:2px;}
+thead, tbody{font-size: 0.9em;margin:0;padding:2px;}
 
 .notes, .mainidea{border:1px solid var(--border-color);}
 .header, .summary{border:2px solid var(--border-color);}
@@ -99,6 +100,19 @@ textarea:focus {
 
 .summary textarea{min-height:12vh;overflow:hidden;}
 .mainidea textarea, .notes textarea{min-height:20vh;overflow:hidden;}
+
+.mainControls {
+	min-height: 3vh;
+	border:2px solid var(--border-color)
+}
+
+#addMain, #removeMain {
+	position:relative;
+	margin-top:0.75vh;
+	margin-bottom:0.75vh;
+	width:100%;
+	display:inline-block;
+}
 
 @font-face {
 	font-family: WorkSans;

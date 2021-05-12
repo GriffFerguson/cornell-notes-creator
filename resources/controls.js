@@ -55,5 +55,13 @@ function fontDecrease() {
         root.style.setProperty('--font-size-2', fs2Assign);
     }
     document.getElementById("fontSize").innerHTML = fs1Assign;
+}
+
+//ADD SECTION
+function addSection() {
+
+}
+
+function removeSection() {
     
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 <head>
   <meta charset="UTF-8">
   <title>Cornell Notes Creator</title>
@@ -27,22 +27,39 @@
         </tbody>
       </table>
     </div>
+    <div>
+      <table style="width:100%;">
+        <thead>
+          <th colspan="2">Section Controls</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="padding-right:2%;"><button id="removeMain">Remove previous section</button></td>
+            <td style="padding-left:2%;"><button id="addMain">Add another section</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
   <form>
   <main>
     <section class="header">
-      <input maxlength="90" placeholder="Enter a title..." name="title">
+      <input maxlength="75" placeholder="Enter a title..." name="title">
       <p id="">&nbsp</p>
     </section>
     <div id="mainwrapper">
       <section class="main">
         <div class="mainidea">
-          <textarea placeholder="Main idea..." id="mainIdea1" oninput="resizeMainIdea(1)" name="mainIdea"></textarea>
+          <textarea placeholder="Main idea..." id="mainIdea0" oninput="resizeMainIdea(0)" name="mainIdea"></textarea>
         </div>
         <div class="notes">
-          <textarea placeholder="Notes..." id="notes1" oninput="resizeNotes(1)" name="notes"></textarea>
+          <textarea placeholder="Notes..." id="notes0" oninput="resizeNotes(0)" name="notes"></textarea>
         </div>
       </section>
+      <!-- <div class="mainControls">
+        <button id="removeMain">Remove previous section</button>
+        <button id="addMain">Add another section</button>
+      </div> -->
     </div>
     <section class="summary">
       <textarea placeholder="Summary..." id="summary" oninput="resizeSummary()" name="summary"></textarea>
