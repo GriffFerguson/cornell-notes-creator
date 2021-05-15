@@ -88,7 +88,7 @@ function removeSection(x) {
 function removeSectionAlert(x) {
 	if (x != 0) {
 		document.getElementById("alert").innerHTML =
-		'<p>Are you sure you want to delete the previous section?</p>' +
+		'<p>Are you sure you want to delete the previously added section?</p>' +
 		'<button onclick="toggleAlert(), removeSection(' + x + ')">Yes</button><button onclick="toggleAlert()">No</button>'
 	} else {
 		document.getElementById("alert").innerHTML =
