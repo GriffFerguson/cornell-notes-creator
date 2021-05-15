@@ -20,7 +20,7 @@ main {
 	margin-left:12%;
 	margin-right:12%;
 	margin-bottom: 2%;
-	padding-top: 9.5vh;
+	padding-top: 11.5vh;
 }
 
 p, span {
@@ -40,12 +40,32 @@ table, th, td {
 
 thead, tbody{font-size: 0.9em;margin:0;padding:2px;}
 
+button {
+	background-color: rgb(196, 196, 196);
+	border:0.1em solid var(--border-color);
+	font-family: WorkSans;
+	padding:0.25em;
+	transition: all 150ms;
+	border-radius:0;
+}
+button:hover {
+	background-color: rgb(92, 92, 92);
+	border:0.1em solid var(--border-color);
+	font-family: WorkSans;
+	padding:0.25em;
+	color:white;
+}
+button:active {
+	background-color: var(--background-color);
+	border:0.1em solid var(--border-color);
+	font-family: WorkSans;
+	padding:0.25em;
+	color:var(--text-color-1);
+}
 
 /* ALERT */
 #alert {
-	--alert-text-col: #ffffff;
-	--alert-back-col: #000000;
-	background-color: var(--alert-back-col);
+	background-color: black;
 	position:fixed;
 	top:0%;
 	left:50%;
@@ -57,7 +77,8 @@ thead, tbody{font-size: 0.9em;margin:0;padding:2px;}
 	padding:0.5em;
 	border:2px solid white;
 }
-#alert p{color:var(--alert-text-col) !important;}
+#alert p{color: white !important;}
+#alert button{margin-right:0.5vw;}
 .open-alert{transform: translate(-50%, 0%)!important;}
 
 
@@ -69,11 +90,18 @@ thead, tbody{font-size: 0.9em;margin:0;padding:2px;}
 	background-color: var(--background-color);
 	width:100%;
 	display:grid;
-	grid-template-columns: 15% 15% 20%;
+	grid-template-columns: 9% 15% 20%;
 	transition: background-color 700ms;
 }
 
 #controlbar table, #controlbar thead, #controlbar tbody {width:100%;}
+
+#modeswitch {
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
 
 #font-cons {
 	width:70%;
@@ -173,7 +201,7 @@ noscript h1, .small-screen h1 {
 
 .small-screen{display: none !important;}
 
-@media only screen and (max-width:650px) {.small-screen{display: block !important;}}
+@media only screen and (max-width:700px) {.small-screen{display: block !important;}}
 
 /* RESPONSIVENESS */
 @media only screen and (max-width:950px) {
@@ -195,6 +223,9 @@ noscript h1, .small-screen h1 {
 		width:50%;
 		margin-left:25%;
 		margin-right:25%
+	}
+	#alert {
+		width:64vw;
 	}
 }
 
