@@ -2,7 +2,7 @@
 <html lang="en-us">
 <head>
   <meta charset="UTF-8">
-  <title>Cornell Notes Creator</title>
+  <title>Blank Notes | Cornell Notes Creator</title>
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <link rel="stylesheet" href="resources/primary.css">
   <script src="resources/controls.js"></script>
@@ -75,7 +75,6 @@
   <main>
     <section class="header">
       <input type="text" maxlength="75" placeholder="Enter a title..." name="title" autocomplete="off">
-      <p id="">&nbsp</p>
     </section>
     <div id="mainwrapper">
       <section class="main" id="main0">

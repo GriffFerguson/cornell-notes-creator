@@ -178,6 +178,7 @@ textarea:focus {
 
 .summary textarea{min-height:12vh;overflow:hidden;}
 .mainidea textarea, .notes textarea{min-height:20vh;overflow:hidden;}
+.mainidea textarea {font-weight: bold;}
 
 /* NOSCRIPT / SCREEN SIZE WARNING */
 noscript, .small-screen {

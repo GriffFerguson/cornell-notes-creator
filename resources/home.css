@@ -1,0 +1,130 @@
+:root {
+	--text-color-1: #000000;
+	--border-color: #000000;
+	--background-color: #ffffff;
+}
+
+html{scroll-behavior: smooth;}
+
+body{
+	margin: 0;
+	background-color: var(--background-color);
+	transition: background-color 700ms;
+    overflow:hidden;
+}
+
+main {
+	display: grid;
+	grid-template-rows: minmax(8vh, 10vh) minmax(20vh, auto) minmax(12vh, auto);
+	margin-left:12%;
+	margin-right:12%;
+	margin-bottom: 2%;
+	padding-top: 8vh;
+}
+
+.mainwrap {  
+    height:100vh;
+    overflow-y: scroll;
+}
+
+p, span {
+	color: var(--text-color-1);
+	font-family: WorkSans;
+	font-size: 0.9em;
+}
+
+button {
+	background-color: rgb(196, 196, 196);
+	border:0.1em solid var(--border-color);
+	font-family: WorkSans;
+	padding:0.25em;
+	transition: all 150ms;
+	border-radius:0;
+}
+button:hover {
+	background-color: rgb(92, 92, 92);
+	border:0.1em solid var(--border-color);
+	font-family: WorkSans;
+	padding:0.25em;
+	color:white;
+}
+button:active {
+	background-color: var(--background-color);
+	border:0.1em solid var(--border-color);
+	font-family: WorkSans;
+	padding:0.25em;
+	color:var(--text-color-1);
+}
+
+header {
+    width:100%;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: var(--background-color);
+    color:var(--text-color-1)
+}
+
+/* BODY */
+.notes, .mainidea{border:1px solid var(--border-color);}
+.header, .summary{border:2px solid var(--border-color);}
+.header, .summary, .mainidea, .notes{padding:0.6vw;}
+.main:first-of-type{border-top:1px solid var(--border-color);}
+.main{border-bottom:3px dotted var(--border-color);border-left:1px solid var(--border-color);border-right:1px solid var(--border-color);}
+.main:last-of-type{border-top:none;border-bottom:1px solid var(--border-color);}
+.mainidea, .notes{border-bottom:none;border-top:none;}
+
+#mainwrapper {
+	display: grid;
+	grid-template-rows: minmax(20vh,auto);
+}
+.main {
+	display: grid;
+	grid-template-columns: 25% 75%;
+}
+
+textarea {
+	color: var(--text-color-1);
+	margin:3px;
+	font-family: WorkSans;
+	font-size: calc(var(--font-size-1) * 1em);
+	width:100%;
+	background-color:var(--background-color);
+	border: none;
+	resize: none;
+	width:100%;
+	height: 100%;
+	transition: background-color 700ms;
+}
+
+textarea:focus {
+	border-bottom: 3px dotted var(--border-color) !important;
+	outline:none;
+}
+
+.header h1 {
+	font-family: WorkSansBlack;
+	font-size: 1.5em;
+	border:none;
+	width: 80%;
+	color:var(--text-color-1);
+}
+
+.header input:focus{border-bottom: 3px dotted var(--border-color) !important;outline:none;}
+
+.summary textarea{min-height:12vh;overflow:hidden;}
+.mainidea textarea, .notes textarea{min-height:20vh;overflow:hidden;}
+.mainidea textarea {font-weight: bold;}
+
+/* FONTS */
+@font-face {
+	font-family: WorkSans;
+	src: url(WorkSans-Regular.ttf);
+}
+
+@font-face {
+	font-family: WorkSansBlack;
+	src: url(WorkSans-Black.ttf);
+}
